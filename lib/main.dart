@@ -1,7 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:olx_app/Home.dart';
+import 'package:olx_app/Login.dart';
 
 
 final ThemeData temaPadrao = ThemeData(
@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       initialRoute: "/",
       routes: {
-        HomeScreen.routeName: (context) => const HomeScreen()
+        Login.routeName: (context) => const Login()
       },
     );
   }

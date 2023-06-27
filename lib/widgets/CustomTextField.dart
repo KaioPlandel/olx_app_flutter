@@ -10,7 +10,7 @@ class CustomTextField extends StatelessWidget {
         required this.hint,
         required this.inputType,
         required this.autoFocus,
-        required this.hideDigit});
+        required this.hideDigit, required this.controller});
 
   final bool autoFocus;
   final bool hideDigit;
@@ -18,6 +18,7 @@ class CustomTextField extends StatelessWidget {
   final double radius;
   final String hint;
   final TextInputType inputType;
+  final TextEditingController controller;
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +26,7 @@ class CustomTextField extends StatelessWidget {
       autofocus: autoFocus,
       obscureText: hideDigit,
       keyboardType: inputType,
+      controller: controller,
       style: TextStyle(fontSize: 20),
       decoration: InputDecoration(
           contentPadding: EdgeInsets.fromLTRB(32, 16, 32, 16),
